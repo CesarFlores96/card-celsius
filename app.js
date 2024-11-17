@@ -40,14 +40,14 @@ function guardarTarea() {
 
   document.getElementById("tareasContainer").appendChild(tareaCard);
 
-  // Mostrar notificación con transición
+
   const notification = document.getElementById("notification");
   notification.classList.add("show");
   setTimeout(() => {
     notification.classList.remove("show");
   }, 3000);
 
-  // Limpiar campos después de guardar
+
   document.getElementById("nombre").value = "";
   document.getElementById("edad").value = "";
   document.getElementById("sexo").value = "Masculino";
