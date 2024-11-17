@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Lista de Tareas</title>
+  </head>
+  <body>
+    <form class="form" onsubmit="return false;">
+      <p class="title">Agregar Tarea</p>
+
+      <div class="flex">
+        <label>
+          <input class="input" type="text" id="nombre" placeholder="" />
+          <span>Nombre</span>
+        </label>
+
+        <label>
+          <input class="input" type="text" id="edad" placeholder="" />
+          <span>Grados Celsius</span>
+        </label>
+      </div>
+
+      <label>
+        <select id="sexo" class="input">
+          <option value="Masculino">Masculino</option>
+          <option value="Femenino">Femenino</option>
+        </select>
+        <span>Sexo</span>
+      </label>
+      <button class="submit" type="button" onclick="guardarTarea()">
+        Guardar
+      </button>
+      <button class="submit" type="button" onclick="borrarTodo()">
+        Borrar Todo
+      </button>
+    </form>
+
+    <div id="tareasContainer" class="tareas-container"></div>
+
+    <div id="notification" class="notification">Tarea agregada con éxito</div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
